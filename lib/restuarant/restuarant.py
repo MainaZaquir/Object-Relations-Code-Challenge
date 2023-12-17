@@ -1,7 +1,8 @@
 class Restaurant:
     def __init__(self, name):
+        # Initializing the restaurant attributes
         self._name = name
-        self._reviews = []
+        self._reviews = []  # A list to store the restaurant's reviews
 
     @property
     def customers(self):
