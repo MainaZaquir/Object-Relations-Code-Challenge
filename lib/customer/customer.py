@@ -2,10 +2,11 @@ class Customer:
     customers = []
 
     def __init__(self, given_name, family_name):
+        # Initializing the customer attributes
         self._given_name = given_name
         self._family_name = family_name
-        self._reviews = []
-        self.__class__.customers.append(self)
+        self._reviews = []  # A list to store the customer's reviews
+        Customer.customers.append(self)
 
     @property
     def full_name(self):
