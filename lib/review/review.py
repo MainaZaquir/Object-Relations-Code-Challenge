@@ -2,6 +2,7 @@ class Review:
     reviews = []
 
     def __init__(self, customer, restaurant, rating):
+        # Initializing the review attributes
         self._customer = customer
         self._restaurant = restaurant
         self._rating = rating
